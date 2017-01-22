@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="in.aqel.jamunamailer.MainActivity">
+
+
+    <Button
+        android:text="Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_gravity="right"
+        android:onClick="clear"
+        android:id="@+id/button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray"
+        >
+
+        <TextView
+            android:text="Enter the student's details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            >
+
+
+            <TextView
+                android:text="Room Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:maxLength="4"
+                android:id="@+id/etRoomNumber" />
+
+            <TextView
+                android:text="Roll number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLength="8"
+                android:text=""
+                android:ems="8"
+                android:id="@+id/etRollNumber" />
+
+            <TextView
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="3"
+                android:ems="10" />
+
+            <Button
+                android:text="Search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:onClick="submit"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_green_dark"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
